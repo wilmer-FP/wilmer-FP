@@ -20,7 +20,7 @@ const query = `query($login: String!) {
     following { totalCount }
     repositories(ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false, first: 100) {
       totalCount
-      nodes { stargazerCount languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } }
+      nodes { name stargazerCount languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } }
     }
     repositoriesContributedTo(first: 1, includeUserRepositories: false, contributionTypes: [COMMIT, PULL_REQUEST, ISSUE, REPOSITORY]) { totalCount }
     contributionsCollection {
@@ -46,7 +46,8 @@ const cal = u.contributionsCollection.contributionCalendar;
 
 // Language bytes across own public repositories.
 const langs = new Map();
-for (const r of repos) for (const e of r.languages.edges) {
+// The profile repo (same name as the login) only holds this tooling — skip it.
+for (const r of repos.filter((r) => r.name.toLowerCase() !== u.login.toLowerCase())) for (const e of r.languages.edges) {
   const cur = langs.get(e.node.name) ?? { size: 0, color: e.node.color };
   cur.size += e.size;
   langs.set(e.node.name, cur);

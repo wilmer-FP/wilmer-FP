@@ -78,6 +78,7 @@ Reglas: las trazas siempre "conectan" algo (texto → servidor, logo → borde);
 | Logo / logo transparente | 1200 × 320 | `npm run build:assets` |
 | Monograma / avatar | 512 × 512 / 460 × 460 | `npm run build:assets` |
 | Tarjetas de proyecto | 1600 × 400 | `npm run build:assets` (desde `data/projects.json`) |
+| Panel de tecnologías (+ variante móvil) | 1600 × 600 / 800 × 1220 | `npm run build:assets` (desde `data/stack.json` + `assets/icons/`) |
 | Tarjeta de estadísticas | 1600 × 440 | `npm run build:stats` (datos reales de la API de GitHub) |
 | Banner de proyecto | 1600 × 360 | `npm run project-banner -- --name ".."` |
 | Footer | 1600 × 220 | `npm run build:assets` |
@@ -86,7 +87,7 @@ Todos los colores y fuentes salen de `scripts/brand.mjs`: cambiar un token ahí 
 
 ## 6. Voz y tono
 
-- **Precisa y honesta.** Describir lo que se ha hecho, con verbos concretos ("aporté la migración de permisos por rol"), sin superlativos ni "experto en".
+- **Precisa y honesta.** Describir lo que se ha hecho, con verbos concretos ("diseñé el modelo relacional y sus migraciones"), sin superlativos ni "experto en".
 - **Bilingüe.** Inglés como idioma principal en títulos; español como línea secundaria (`<sub>`) o párrafo paralelo. Nunca traducir nombres de tecnologías.
 - **Corta.** Una idea por línea. Si un párrafo pasa de tres líneas, se divide o se recorta.
 - **Sin emojis** en títulos ni listas; la iconografía la aportan el monograma y los iconos de tecnologías.

@@ -48,8 +48,26 @@ npm run project-banner -- --name "inventory-api" --tagline "Stock control REST A
 
 ## 5. Añadirlo al perfil
 
-1. Añade una entrada a `data/projects.json` (copia la de SIGAT y cambia los campos; `flow` es opcional y dibuja el mini diagrama de arquitectura).
+1. Añade una entrada a `data/projects.json` con esta forma (`flow` es opcional y dibuja el mini diagrama de arquitectura):
+
+   ```json
+   {
+     "id": "inventory-api",
+     "label": "PERSONAL PROJECT",
+     "title": "Inventory API",
+     "lines": ["Stock control REST API with audit trail.", "JWT auth, pagination and automated tests."],
+     "stack": ["Python", "FastAPI", "PostgreSQL"],
+     "linkLabel": "github.com/wilmer-FP/inventory-api",
+     "url": "https://github.com/wilmer-FP/inventory-api",
+     "flow": [
+       { "title": "Client", "sub": "HTTP", "edge": "JSON" },
+       { "title": "FastAPI", "sub": "REST · JWT", "edge": "SQLAlchemy" },
+       { "title": "PostgreSQL", "sub": "16" }
+     ]
+   }
+   ```
 2. `npm run build:assets` → genera `assets/cards/<id>.png`.
-3. En `README.md`, copia el bloque comentado `ADD A PROJECT` encima de la línea *"More public repositories are on the way"*.
-4. Si el proyecto añade una tecnología nueva, muévela de "pendiente" a "verificada" en `docs/PROFILE_CONTENT.md` y añádela a *Tech stack*.
+3. En `README.md`, sustituye el texto *"first public repositories are in progress"* por el bloque comentado `ADD A PROJECT`.
+4. Si el proyecto añade una tecnología nueva, muévela de "pendiente" a "usada" en `docs/PROFILE_CONTENT.md`, añádela a `data/stack.json` y ejecuta `npm run build:assets`.
+5. Nunca publiques ni enlaces proyectos de la universidad o de terceros sin permiso explícito.
 5. Máximo **4 proyectos destacados**. Cuando haya más, usa los *Pinned repositories* de GitHub y deja aquí sólo los mejores.

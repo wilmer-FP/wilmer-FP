@@ -36,47 +36,32 @@
 
 ## Backend development <sub>· Desarrollo backend</sub>
 
-What I have actually worked on, in real code:
+What I work on, from coursework and hands-on practice:
 
-- **Database migrations & seed data** — Alembic migrations on PostgreSQL, including a role-based permission matrix.<br><sub>Migraciones y datos semilla con Alembic sobre PostgreSQL, incluida una matriz de permisos por rol.</sub>
-- **Integration testing** — pytest suites that run against a real database.<br><sub>Pruebas de integración con pytest contra una base de datos real.</sub>
-- **REST APIs in a layered architecture** — FastAPI service with typed contracts, contributed to as part of a team.<br><sub>APIs REST con FastAPI en una arquitectura por capas, como parte de un equipo.</sub>
-- **Relational modeling** — from entity-relationship models to SQL schemas.<br><sub>Modelado relacional: de modelos entidad-relación a esquemas SQL.</sub>
+- **REST APIs** — designing endpoints and typed contracts with FastAPI and Express.<br><sub>Diseño de endpoints y contratos tipados con FastAPI y Express.</sub>
+- **Relational databases** — modeling from entity-relationship diagrams to SQL schemas on PostgreSQL.<br><sub>Modelado relacional: de diagramas entidad-relación a esquemas SQL en PostgreSQL.</sub>
+- **Schema migrations** — versioning database changes with Alembic.<br><sub>Versionado de cambios en la base de datos con Alembic.</sub>
+- **Testing** — automated tests with pytest.<br><sub>Pruebas automatizadas con pytest.</sub>
 
 ## Tech stack <sub>· Tecnologías</sub>
 
-### Languages & backend
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/stack-mobile.png">
+  <img src="assets/stack.png" width="100%" alt="Tech stack. Languages and backend: Python, FastAPI, Node.js, Express, JavaScript, Java, C. Databases: PostgreSQL, SQL, SQLAlchemy, Alembic. Tools: Git, GitHub, VS Code, pytest, Jupyter, NumPy, pandas.">
+</picture>
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,nodejs,express,js,java,c&theme=dark" height="44" alt="Python, FastAPI, Node.js, Express, JavaScript, Java, C">
-
-### Databases <sub>· Bases de datos</sub>
-
-<img src="https://skillicons.dev/icons?i=postgres&theme=dark" height="44" alt="PostgreSQL"> &nbsp; <b>PostgreSQL</b> · PostGIS · SQL · SQLAlchemy · Alembic
-
-### Tools & technologies <sub>· Herramientas</sub>
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" height="44" alt="Git, GitHub, Visual Studio Code"> &nbsp; pytest · Jupyter · NumPy · pandas
-
-<sub>Only tools I have used in real code are listed: public commits (Python, FastAPI, PostgreSQL, SQL, Alembic, pytest, Git) or academic projects (Node.js, Express, JavaScript, Java, C with OpenMP, Jupyter). The list grows as public repositories land.<br>
-Solo aparecen herramientas usadas en código real: commits públicos o proyectos académicos. La lista crecerá con cada repositorio público.</sub>
+<sub>Only technologies I have used in academic and hands-on work are listed; the panel grows with each public repository. · Solo aparecen tecnologías que he usado en trabajo académico y práctico; el panel crecerá con cada repositorio público.</sub>
 
 ## Featured projects <sub>· Proyectos destacados</sub>
 
-<a href="https://github.com/SIGAT-UP/backend-sigat">
-  <img src="assets/cards/sigat-backend.png" width="100%" alt="SIGAT Backend API — academic team project. REST API for phytosanitary surveillance of peach crops, built with Python, FastAPI, PostgreSQL + PostGIS and Alembic.">
-</a>
-
-**SIGAT — Backend API** · <sub>Academic team project · Contributor</sub><br>
-**EN** — REST API for phytosanitary surveillance of peach crops and Mediterranean fruit fly monitoring. I contributed the role-permission seed migration, scenario classification migration and integration-test fixes.<br>
-**ES** — API REST para la vigilancia fitosanitaria del cultivo de durazno y el seguimiento de la mosca del Mediterráneo. Aporté la migración de permisos por rol, la clasificación por escenarios y ajustes a las pruebas de integración.
-
-<sub>More public repositories are on the way, each following the <a href="docs/PROJECT_TEMPLATE.md">WILMERFP project standard</a>. · Más repositorios públicos en camino.</sub>
+**EN** — My first public repositories are in progress. Each one will land here with its architecture, stack and tests, following the <a href="docs/PROJECT_TEMPLATE.md">WILMERFP project standard</a>.<br>
+**ES** — Mis primeros repositorios públicos están en preparación. Cada uno aparecerá aquí con su arquitectura, tecnologías y pruebas.
 
 <!--
   ┌─ ADD A PROJECT ────────────────────────────────────────────────────────────┐
   │ 1. Add an entry to data/projects.json                                      │
   │ 2. npm run build:assets  → assets/cards/<id>.png                          │
-  │ 3. Copy this block above the "More public repositories" line:             │
+  │ 3. Replace the "first public repositories are in progress" text with:     │
   └────────────────────────────────────────────────────────────────────────────┘
 <a href="https://github.com/wilmer-FP/REPO">
   <img src="assets/cards/ID.png" width="100%" alt="PROJECT — one-line description and stack.">
