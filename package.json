@@ -1,0 +1,17 @@
+{
+  "name": "wilmerfp-github-identity",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WILMERFP brand assets and GitHub profile README sources.",
+  "type": "module",
+  "scripts": {
+    "build:assets": "node scripts/build-assets.mjs",
+    "build:stats": "node scripts/stats-card.mjs",
+    "project-banner": "node scripts/project-banner.mjs"
+  },
+  "devDependencies": {
+    "@expo-google-fonts/jetbrains-mono": "^0.4.1",
+    "@expo-google-fonts/space-grotesk": "^0.4.1",
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}
