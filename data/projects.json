@@ -1,0 +1,21 @@
+[
+  {
+    "id": "sigat-backend",
+    "label": "ACADEMIC TEAM PROJECT · CONTRIBUTOR",
+    "title": "SIGAT — Backend API",
+    "lines": [
+      "REST API for phytosanitary surveillance of peach crops",
+      "and Mediterranean fruit fly monitoring.",
+      "My work: role-permission seeds, migrations, integration tests."
+    ],
+    "highlightLast": true,
+    "stack": ["Python", "FastAPI", "PostgreSQL + PostGIS", "Alembic"],
+    "linkLabel": "github.com/SIGAT-UP/backend-sigat",
+    "url": "https://github.com/SIGAT-UP/backend-sigat",
+    "flow": [
+      { "title": "Web · Mobile", "sub": "SIGAT clients", "edge": "HTTP / JSON" },
+      { "title": "FastAPI", "sub": "REST · JWT", "edge": "SQLAlchemy" },
+      { "title": "PostgreSQL", "sub": "16 + PostGIS" }
+    ]
+  }
+]
