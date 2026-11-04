@@ -5,7 +5,7 @@
   "description": "WILMERFP brand assets and GitHub profile README sources.",
   "type": "module",
   "scripts": {
-    "build:assets": "node scripts/build-assets.mjs",
+    "build:assets": "node scripts/build-assets.mjs && node scripts/build-stack.mjs",
     "build:stats": "node scripts/stats-card.mjs",
     "project-banner": "node scripts/project-banner.mjs"
   },
