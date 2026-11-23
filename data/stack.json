@@ -1,0 +1,32 @@
+[
+  {
+    "label": "LANGUAGES & BACKEND",
+    "es": "Lenguajes y backend",
+    "icons": [
+      ["python", "Python"],
+      ["fastapi", "FastAPI"],
+      ["nodejs", "Node.js"],
+      ["express", "Express"],
+      ["js", "JavaScript"],
+      ["java", "Java"],
+      ["c", "C"]
+    ],
+    "chips": []
+  },
+  {
+    "label": "DATABASES",
+    "es": "Bases de datos",
+    "icons": [["postgres", "PostgreSQL"]],
+    "chips": ["SQL", "SQLAlchemy", "Alembic"]
+  },
+  {
+    "label": "TOOLS",
+    "es": "Herramientas",
+    "icons": [
+      ["git", "Git"],
+      ["github", "GitHub"],
+      ["vscode", "VS Code"]
+    ],
+    "chips": ["pytest", "Jupyter", "NumPy", "pandas"]
+  }
+]
